@@ -1,0 +1,179 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "mainPanel"
+			"border": new javax.swing.border.TitledBorder( null, "Song Database", 4, 0, new java.awt.Font( "Segoe UI", 1, 12 ), null )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Song's Name"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Writter"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 16
+				"x": 25
+				"y": 75
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Singer"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 50
+				"height": 16
+				"x": 25
+				"y": 115
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Release Date"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 16
+				"x": 25
+				"y": 155
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Revenue"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 80
+				"height": 16
+				"x": 25
+				"y": 195
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "WrittertextField2"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 255
+				"height": 30
+				"x": 120
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "SingertextField3"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 255
+				"height": 30
+				"x": 120
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ReDatetextField4"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ReDatetextField4ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 255
+				"height": 30
+				"x": 120
+				"y": 150
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Showbutton3"
+				"text": "Show"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Showbutton3MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 290
+				"y": 260
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Deletebutton5"
+				"text": "Delete"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Deletebutton5MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 78
+				"height": 30
+				"x": 195
+				"y": 260
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "maintable1"
+					"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "Song's Name" )
+						add( "Writter" )
+						add( "Singer" )
+						add( "Release Date" )
+						add( "Revenue" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 300
+				"width": 375
+				"height": 255
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "SongNametextField1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 35
+				"width": 250
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "RevenuetextField5"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "RevenuetextField5KeyTyped", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 190
+				"width": 245
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "invalidlabel6"
+				"text": "   "
+				"foreground": sfield java.awt.Color red
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 125
+				"y": 230
+				"width": 195
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Addbutton1"
+				"text": "Add"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Addbutton1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 260
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Modifybutton2"
+				"text": "Modify"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Modifybutton2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 110
+				"y": 260
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 565 )
+		} )
+	}
+}
